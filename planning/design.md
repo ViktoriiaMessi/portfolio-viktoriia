@@ -1,17 +1,11 @@
-# Design
+# Viktoriia Sukhetska Portfolio
 
 ## Project's design overview
 
-> Give an overview of your project's design
-
-<!-- give an overview of your project's design -->
-<!-- describe the reasoning behind your group's design and wireframe -->
-<!-- include other centralized decisions like fonts, palates, ... -->
-
----
+A simple Landing Page that displays the programmer's work style, skills and values.
 
 ## Wireframe(s)
 
-> Include your wireframe(s) and link to wireframe
+![Design](./Design.png)
 
 <!-- provide a link to your wireframe documenting on Figma, or wherever it is -->
