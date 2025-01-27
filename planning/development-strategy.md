@@ -1,55 +1,143 @@
-# Project Name
-
-<!-- describe your project -->
-
----
+# Viktoriia Sukhetska Portfolio
 
 ## Setup
 
-<!-- what code do you need just to open the project? this might include:
-  - boilerplate code (https://brandlitic.com/what-is-boilerplate-code/)
-  - loading program data
-  - rendering the initial user interface
--->
+- Create a GitHub repository using the portfolio project template.
 
----
+- Add collaborators if needed.
 
-<!-- copy this section once for each must-have user story -->
+- Clone the repository to your local machine.
 
-## user story
+- Set up the project environment by installing required dependencies:
 
-<!-- each issue created from this section will have the `for: user story` label -->
+- npm install
 
-> "as a ... i can ... so that ..."
+## Home
 
-<!-- write any extra notes or description -->
+### Navigation Bar
 
-<!-- describe the tasks to build this user story
-  these will have the `type: logic` label, for example
-  not all projects will have all types of tasks
-  and these are not the only possible types, just some suggestions
--->
+HTML
 
-### Logic: user story
+- Add a _nav_ tag with the class navbar.
 
-- a _logic_ task -> this will become one issue
-  - [ ] some checkboxes for this task
-  - [ ] these will be copy-pasted into the issue
+- Include a _div_ with class container-flex for layout.
 
-### Interface: user story
+- Add an _h1_ with class logo for branding.
 
-- an _interface_ task -> this will become one issue
-  - [ ] some checkboxes for this task
-  - [ ] these will be copy-pasted into the issue
+- Use _ul_ and _li_ tags to create navigation links.
 
-### Interaction: user story
+CSS
 
-- an _interaction_ task -> this will become one issue
-  - [ ] some checkboxes for this task
-  - [ ] these will be copy-pasted into the issue
+- Style the navbar with display: flex for alignment.
 
-### Documentation: user story
+- Height, margin, and padding.
 
-- a _documentation_ task -> this will become one issue
-  - [ ] some checkboxes for this task
-  - [ ] these will be copy-pasted into the issue
+- Hover effects for links.
+
+### About
+
+HTML
+
+- Add a _section_ tag with class about.
+
+- Include a _div_ with class container grid.
+
+- Add an _h2_ with class section-title for the title.
+
+- Include a _p_ tag for a short bio and a list of skills.
+
+CSS
+
+- Style the about section with padding and margins.
+
+- Add responsive layout for smaller screens.
+
+- Use a grid layout to align content.
+
+## Projects
+
+HTML
+
+- Add a _section_ tag with class projects.
+
+- Include a _div_ with class container grid.
+
+- Create individual project cards with:
+
+_img_ for project screenshots
+
+_h3_ for project titles
+
+<p> for project descriptions
+
+CSS
+
+Use a grid layout for project cards.
+
+Style cards with hover effects.
+
+Add responsive design for smaller screens.
+
+## Skills
+
+HTML
+
+- Add a _section_ tag with class skills.
+
+- Include a _div_ with class container grid.
+
+- Add _div_ tags for individual skills with icons and labels.
+
+CSS
+
+- Style the skills section with grid layout for alignment.
+
+- Add hover effects to highlight individual skills.
+
+- Ensure responsiveness for various screen sizes.
+
+## Contact
+
+HTML
+
+- Add a _section_ tag with class contact.
+
+- Include a _form_ element with*div* tags with class form-control.
+
+- Input fields for name, email, and message.
+
+- A submit button with class btn.
+
+CSS
+
+- Style the contact form with:
+
+margin for spacing
+
+padding for form fields
+
+- Responsive layout for mobile devices.
+
+## Footer
+
+HTML
+
+- Add a _footer_ tag with class footer bg-dark py-5.
+
+- Include a _div_ with class container grid grid-3.
+
+- Add three sections:
+
+Branding: _h1_ for the portfolio name and copyright note
+
+Navigation: _ul_ with links to Home, About, Projects, and Contact
+
+Social Media: Links with FontAwesome icons for GitHub, LinkedIn, and Twitter
+
+CSS
+
+- Apply a dark background color and padding.
+
+- Use grid layout to align the three sections horizontally.
+
+- Add hover effects for social media icons.
