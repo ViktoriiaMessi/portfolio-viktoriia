@@ -2,7 +2,8 @@
 
 ## Project's design overview
 
-A simple Landing Page that displays the programmer's work style, skills and values.
+A simple Landing Page that displays the programmer's work style, skills and
+values.
 
 ## Wireframe(s)
 
