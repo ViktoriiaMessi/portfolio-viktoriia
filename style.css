@@ -1,0 +1,675 @@
+/* ЛОГОТИП */
+.logo {
+  height: 60px; /* Устанавливаем меньшую высоту для логотипа, чтобы он не выглядел слишком большим */
+  margin-right: 15px; /* Пространство справа, чтобы логотип не прилегал к другим элементам */
+  margin-left: -30px; /* Смещаем логотип левее на 30 пикселей */
+  border: 0.3px solid #fdd835; /* Желтая рамка вокруг логотипа */
+  border-radius: 5px; /* Закругленные углы рамки */
+  padding: 5px; /* Внутренние отступы для логотипа, чтобы он не прилипал к границе рамки */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Добавляем легкую тень для придания объема */
+}
+
+/* НАВИГАЦИОННОЕ МЕНЮ */
+header {
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.8
+  ); /* Меняем фон шапки на более легкий темный цвет с прозрачностью */
+  padding: 20px 30px; /* Увеличиваем отступы, чтобы создать больше пространства в шапке */
+}
+
+.header-text {
+  color: #ffffff; /* Яркий желтый цвет текста для соответствия вашему дизайну */
+  font-size: 1.2rem; /* Размер шрифта */
+  margin-left: 10px; /* Отступ слева от логотипа */
+  opacity: 2; /* Полупрозрачность для текста */
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5); /* Легкая тень для текста */
+  align-self: left; /* Выравниваем текст по вертикали */
+}
+
+.container {
+  display: flex; /* Flexbox для размещения логотипа и меню на одной линии */
+  justify-content: space-between; /* Логотип слева, меню справа */
+  align-items: center; /* Центрируем элементы по вертикали */
+}
+
+nav ul {
+  list-style: none; /* Убираем точки у списка */
+  display: flex; /* Делаем список горизонтальным */
+  gap: 20px; /* Пространство между элементами меню */
+  padding: 0; /* Убираем отступы, чтобы сделать меню аккуратнее */
+  margin: 0; /* Убираем внешние отступы */
+}
+
+nav a {
+  text-decoration: none; /* Убираем подчеркивание у ссылок */
+  color: #f0f0f0; /* Ссылки теперь более светлые для лучшего контраста */
+  font-weight: bold; /* Делаем текст ссылок более выразительным */
+  transition: color 0.5s; /* Плавное изменение цвета при наведении */
+}
+
+nav a:hover {
+  color: #fdd835; /* Цвет при наведении для интерактивности */
+}
+
+body {
+  background-image: url("fone.jpg"); /* Укажите путь к вашему изображению */
+  background-size: cover; /* Заставляет изображение покрывать весь фон */
+  background-repeat: no-repeat; /* Убирает повторение изображения */
+  background-attachment: fixed; /* Фиксирует изображение на месте при прокрутке */
+  background-image: url("fone.jpg");
+  background-color: rgba(0, 0, 0, 0.3);
+  background-blend-mode: overlay;
+}
+
+/* ПЕРВЫЙ БЛОК */
+
+/* Общий стиль для секции "home-section" */
+.home-section {
+  background-image: url("fone1.jpg"); /* Устанавливаем фон с изображением */
+  background-size: 100%;
+  background-repeat: no-repeat;
+  border: 0.3px solid #fdd835; /* Желтая рамка вокруг логотипа */
+  border-radius: 10px; /* Закругленные углы рамки */
+  padding: 5px; /* Внутренние отступы для логотипа, чтобы он не прилипал к границе рамки */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Добавляем легкую тень для придания объема */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Создаем тень вокруг области фона */
+
+  /* Общие стили для фона страницы */
+  body {
+    background-image: url("fone1.jpg"); /* Добавляем изображение в качестве фона */
+    background-size: cover; /* Картинка покрывает всю страницу */
+    background-attachment: fixed; /* Фон остается на месте при прокрутке */
+    background-position: center; /* Центрируем фон */
+  }
+
+  background-position: left; /* Центрируем картинку */
+  height: 50vh; /* Высота секции будет занимать половину высоты экрана */
+  display: flex; /* Flexbox для выравнивания текста по центру */
+  flex-direction: column; /* Элементы расположены сверху вниз */
+  align-items: right; /* Центрируем элементы по горизонтали */
+  justify-content: center; /* Центрируем элементы по вертикали */
+  color: white; /* Делаем текст белым для контраста с фоном */
+  text-align: center; /* Центрируем текст */
+  padding: 20px; /* Добавляем отступы для более аккуратного вида */
+}
+
+/* Стили для заголовка в секции */
+.home-section h1 {
+  font-size: 4.5rem; /* Увеличиваем размер заголовка для большей выразительности */
+  margin-bottom: 50px; /* Добавляем больше пространства под заголовком */
+  margin-left: -500px; /* Сдвигаем заголовок немного влево */
+  margin-top: 50px;
+}
+
+/* Стили для абзаца в секции */
+.home-section p {
+  font-size: 1.3rem; /* Увеличиваем размер описания */
+  max-width: 1000px; /* Ограничиваем ширину текста, чтобы он не растягивался на весь экран */
+  margin: 0 auto; /* Центрируем описание по горизонтали */
+  margin-left: 700px; /* Добавляем небольшой отступ слева для смещения текста влево */
+}
+
+/* ОБЩИЕ СТИЛИ ДЛЯ СЕКЦИЙ */
+.section {
+  margin: 60px auto; /* Отступы сверху и снизу для разделения секций */
+  padding: 50px 20px; /* Внутренние отступы для содержимого */
+  max-width: 1000px; /* Ограничиваем ширину секции */
+  border-radius: 8px; /* Слегка закругляем углы секций для аккуратного вида */
+  background-color: #222; /* Темный фон для секции */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Легкая тень для создания эффекта объема */
+}
+
+/* ЗАГОЛОВКИ СЕКЦИЙ */
+.section h2 {
+  font-size: 10rem;
+  text-align: center;
+  color: #fdd835; /* Яркий желтый цвет для заголовка */
+  margin-bottom: 20px; /* Отступ под заголовком */
+}
+
+/* СТИЛИ ДЛЯ СЕКЦИИ ABOUT ME */
+.about-section {
+  padding: 20px 20px;
+  background-color: #222; /* Темно-серый фон для выделения секции "About Me" */
+  border-radius: 8px; /* Закругляем углы */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Тень для создания эффекта объема */
+  margin: 40px auto; /* Отступы сверху и снизу для визуального разделения секций */
+  max-width: 1000px; /* Ограничиваем ширину секции */
+
+  /* Добавляем рамку и легкую тень */
+  border: 1px solid rgba(0, 0, 0, 0.2); /* Легкая черная рамка */
+  box-shadow: 0 5px 20px 5px rgba(0, 0, 0, 0.2);
+}
+
+.about-section h2 {
+  font-size: 2rem; /* Размер заголовка "About Me" */
+  text-align: center;
+  color: #fdd835; /* Желтый цвет заголовка */
+  margin-bottom: 20px; /* Отступ под заголовком */
+}
+
+.about-section p {
+  font-size: 1.2rem;
+  color: #e0e0e0; /* Цвет текста */
+  text-align: justify;
+  line-height: 1.6; /* Интерлиньяж для улучшения читабельности */
+  margin-bottom: 10px; /* Отступ между абзацами */
+}
+
+/* Стиль для обоих секций: About и Skills */
+.skills-section {
+  background-color: #222; /* Темно-серый фон */
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 1000px; /* Ограничение ширины блока */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  /* Добавляем рамку и легкую тень */
+  border: 1px solid rgba(0, 0, 0, 0.2); /* Легкая черная рамка */
+  box-shadow: 0 5px 20px 5px rgba(0, 0, 0, 0.2);
+}
+
+.skills-section h2 {
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.8em;
+  color: #f1c40f;
+  margin-bottom: 15px;
+}
+
+.skills-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Две колонки одинаковой ширины */
+  gap: 20px; /* Пространство между колонками и строками */
+  padding: 0;
+  list-style: none; /* Убираем маркеры списка */
+}
+
+.skills-section li {
+  font-size: 1.2rem; /* Размер шрифта, такой же как в предыдущем абзаце */
+  line-height: 1.6; /* Межстрочный интервал для улучшения читабельности */
+  color: #e0e0e0; /* Светло-серый цвет текста, такой же как в предыдущем абзаце */
+  display: flex; /* Flexbox для размещения иконки и текста на одной линии */
+  align-items: center; /* Центрируем элементы по вертикали */
+  padding: 5px 0; /* Пространство между элементами списка */
+  margin-right: 10px; /* Пространство между иконкой и текстом */
+  font-size: 1.2em; /* Размер иконки */
+  filter: brightness(1.4) contrast(2) saturate(2); /* Увеличиваем яркость, контраст и насыщенность */
+}
+
+.skills-list img {
+  width: 40px; /* Размер иконки */
+  height: auto;
+  margin-right: 10px; /* Отступ между иконкой и текстом */
+}
+
+/* ПЕРЕХОД МЕЖДУ СЕКЦИЯМИ */
+.section + .section {
+  margin-top: 60px; /* Дополнительный отступ сверху для создания пространства между секциями */
+  border-top: 5px solid #fdd835; /* Желтая полоса для акцента и разделения */
+}
+
+/* СТИЛИЗАЦИЯ СЕКЦИИ MY PROJECTS */
+.projects-section {
+  padding: 20px 20px; /* Оптимизированный отступ */
+  max-width: 1000px; /* Ограничение ширины секции */
+  margin: 40px auto; /* Равные отступы сверху и снизу для выравнивания */
+  background-color: #222; /* Темный фон для контраста с текстом */
+  color: #e0e0e0; /* Светло-серый текст для читабельности */
+  border-radius: 8px; /* Слегка закругленные углы */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); /* Легкая объемная тень */
+}
+
+.projects-section h2 {
+  font-weight: bold;
+  text-align: center;
+  font-size: 2rem; /* Оптимизированный размер заголовка */
+  color: #f1c40f; /* Желтый цвет заголовка для выделения */
+  margin-bottom: 20px; /* Отступ снизу для отделения от проектов */
+}
+
+.project {
+  background-color: #333; /* Темный фон для карточки проекта */
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px; /* Закругленные углы для карточек */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Легкая тень для создания объема */
+  transition: transform 0.3s, box-shadow 0.3s; /* Добавляем эффект при наведении */
+}
+
+.project:hover {
+  transform: translateY(-5px); /* Поднимаем карточку при наведении */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); /* Увеличиваем тень при наведении */
+}
+
+.project h3 {
+  font-size: 1.6rem; /* Размер заголовка проекта */
+  color: #f1c40f; /* Яркий цвет заголовка проекта */
+  margin-bottom: 10px; /* Отступ под заголовком */
+}
+
+.project p {
+  font-size: 1.1rem; /* Размер текста описания */
+  line-height: 1.6; /* Легкий интервал для улучшенной читабельности */
+  color: #e0e0e0; /* Светло-серый цвет текста */
+}
+
+/* СТИЛИЗАЦИЯ СЕКЦИИ CONTACT ME */
+.contact-section {
+  padding: 20px 20px; /* Увеличиваем нижний внутренний отступ секции */
+  max-width: 1000px;
+  margin: 40px auto;
+  background-color: #222;
+  color: #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  border: 0.2px solid #fdd835; /* Желтая рамка вокруг логотипа */
+  border-radius: 5px; /* Закругленные углы рамки */
+}
+
+.contact-section h2 {
+  font-family: "times new roman", sans-serif; /* Используем тот же шрифт, что и в секции "My Projects" */
+  font-size: 2rem; /* Размер шрифта */
+  color: #fdd835; /* Цвет текста */
+  font-weight: bold; /* Жирный шрифт */
+  text-align: center; /* Выравнивание текста */
+  margin-bottom: 30px;
+}
+
+/* Кнопка отправки формы */
+.contact-form button {
+  border-color: #fdd835;
+  margin-top: 20px; /* Добавляем отступ сверху для опускания кнопки */
+  background-color: #fdd835;
+  color: #070000;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-bottom: 40px; /* Увеличиваем отступ снизу для кнопки */
+  width: 400px; /* Устанавливаем фиксированную ширину кнопки */
+}
+
+.contact-form button:hover {
+  background-color: #009933;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 800px; /* Ограничиваем ширину формы */
+  margin: 0 auto;
+}
+
+.contact-form label {
+  font-size: 1.1rem;
+  color: #e0e0e0;
+  text-align: left; /* Выравниваем текст по левому краю */
+  display: block; /* Делаем метки блочными для лучшего выравнивания */
+  margin-bottom: 3px; /* Добавляем небольшой отступ под метками для улучшения внешнего вида */
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  border: 2px solid #444;
+  border-radius: 5px;
+  background-color: #333;
+  color: #ffffff;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #fdd835; /* Подсвечиваем рамку желтым цветом при фокусе */
+}
+
+.contact-form button {
+  border-color: #fdd835;
+  background-color: #fdd835;
+  color: #070000;
+  padding: 15px 25px; /* Размер кнопки */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin: 0 auto;
+  margin-top: 40px; /* Увеличиваем отступ сверху, чтобы создать больший отступ между кнопкой и полем ввода */
+  font-weight: bold;
+  font-size: 1.2rem;
+  font-family: inherit; /* Использовать тот же шрифт, что и на странице */
+}
+
+.contact-form button:hover {
+  background-color: #009933; /* При наведении кнопка становится темнее */
+}
+
+.wwf-support {
+  display: flex; /* Используем Flexbox для горизонтального размещения */
+  align-items: center; /* Центрируем элементы по вертикали */
+  justify-content: center; /* Центрируем элементы по горизонтали */
+  background-color: transparent; /* Заменяем темно-серый фон на прозрачный */
+  padding: 5px; /* Отступы вокруг */
+  border-radius: 5px; /* Закругляем углы */
+}
+
+.wwf-support a {
+  display: flex; /* Flexbox для ссылки, чтобы картинка и текст были на одной линии */
+  align-items: center; /* Центрируем картинку и текст по вертикали */
+  text-decoration: none; /* Убираем подчеркивание */
+  color: #ffffff; /* Белый цвет текста */
+}
+
+.wwf-support img {
+  height: 250px; /* Высота изображения */
+  margin-right: 15px; /* Отступ справа от изображения */
+}
+
+.back-to-top {
+  display: inline-block;
+  margin-top: 20px;
+  text-decoration: none;
+  color: #000000;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.back-to-top:hover {
+  color: #fdd835;
+}
+
+/* СТИЛИЗАЦИЯ ФУТЕРА */
+footer {
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.8
+  ); /* Прозрачный темный фон, как у верхнего блока */
+  padding: 20px 30px; /* Аналогичные отступы для создания пространства внутри блока */
+  border-top: 1px solid #fdd835; /* Верхняя рамка, которая соответствует стилю наверху */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Легкая тень, как у верхнего блока */
+  max-width: 100%; /* Устанавливаем ширину на всю доступную область */
+  margin: 0 auto; /* Центрирование футера */
+  text-align: center; /* Центрирование текста внутри футера */
+  color: #ffffff; /* Сделать текст белым */
+}
+
+footer a {
+  color: #fdd835; /* Желтый цвет для ссылок в футере, чтобы соответствовать стилю наверху */
+  text-decoration: none; /* Убираем подчеркивание у ссылок */
+  font-weight: bold; /* Делаем текст ссылок более выразительным */
+  transition: color 0.5s; /* Плавное изменение цвета при наведении */
+}
+
+footer a:hover {
+  color: #0b159d; /* Цвет при наведении для интерактивности, аналогичный стилю наверху */
+}
+
+/* Адаптивные стили для МОБИЛЬНІХ устройств */
+/* Общие правила для предотвращения горизонтальной прокрутки */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+@media (max-width: 768px) 
+.body {
+  background-image: url("fone.jpg");
+  background-color: rgba(0, 0, 0, 0.8); /* Добавляет слой цвета поверх изображения, делая его менее контрастным */
+  background-blend-mode: overlay; /* Смешивает цвет и изображение */
+}
+
+
+/* Адаптация элементов для мобильной версии */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+    padding: 10px;
+    background-color: #1a1a1a; /* Менее контрастный цвет, более мягкий для глаз */
+  }
+
+ /* Общие правила для предотвращения горизонтальной прокрутки */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* Основные стили для заголовка "PORTFOLIO" */
+.home-section h1 {
+  font-size: 60px; /* Размер шрифта для десктопов */
+  padding-top: 105px; /* Смещает заголовок вниз */
+  display: block; /* Убедитесь, что заголовок занимает всю ширину для центрирования */
+  text-align: center; /* Центрируем текст */
+  margin-left: -100px; /* Сдвигаем заголовок немного влево */
+  
+  color: #ffffff; /* Цвет заголовка */
+}
+
+/* Адаптивные стили для мобильных устройств */
+@media (max-width: 768px) {
+  body {
+    background-image: url("fone.jpg");
+    background-color: rgba(0, 0, 0, 0.8);
+    background-blend-mode: overlay;
+  }
+}
+
+  .home-section h1 {
+    font-size: 28px; /* Уменьшаем размер для мобильных устройств */
+    margin-top: 20px; /* Уменьшаем отступ сверху */
+  }
+
+  /* Логотип и меню */
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+  }
+
+  .nav-menu,
+  .menu {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 10px 0;
+  }
+
+  .nav-menu {
+    display: none; /* Скрыть меню, если нет hamburger-меню */
+  }
+
+  /* Изображения и разделы */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Блок About Me и другие секции */
+  section {
+    padding: 15px;
+    text-align: center;
+  }
+
+  /* Кнопки */
+  .contact-form button {
+    width: 90%;
+    margin: 10px auto;
+    display: block;
+    box-sizing: border-box;
+  }
+
+  /* Логотип в шапке */
+  .header img {
+    max-width: 100px;
+    height: auto;
+  }
+
+  /* Полоски для gold-stripes */
+  .gold-stripes {
+    margin: 10px 0;
+  }
+}
+
+
+
+  /* Логотип и меню */
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+  }
+
+  .nav-menu,
+  .menu {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 10px 0;
+  }
+
+  .nav-menu {
+    display: none; /* Скрыть меню, если нет hamburger-меню */
+  }
+
+  /* Изображения и разделы */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Блок About Me и другие секции */
+  section {
+    padding: 15px;
+    text-align: center;
+  }
+
+  /* Кнопки */
+  .contact-form button {
+    width: 100%;
+    margin: 40px 0;
+
+  
+  }
+
+  /* Логотип в шапке */
+  .header img {
+    max-width: 100px;
+    height: auto;
+  }
+
+  /* Полоски для gold-stripes */
+  .gold-stripes {
+    margin: 10px 0;
+  }
+
+/* Адаптивные стили для кнопки в мобильной версии */
+@/* Исправление кнопки для мобильной версии */
+@media (max-width: 768px) {
+  .contact-form button,
+  .contact-form button {
+    width: 90%; /* Уменьшаем ширину кнопки, чтобы избежать выхода за рамки */
+    max-width: 90%; /* Максимальная ширина кнопки */
+    margin: 10px auto; /* Центрируем кнопку и добавляем отступ сверху и снизу */
+    display: block; /* Блочное отображение */
+    box-sizing: border-box; /* Чтобы учесть padding */
+    width: 90% !important;
+    max-width: 90% !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .header-text {
+    display: none !important; /* Скрыть элемент с текстом в мобильной версии */
+  }
+}
+
+@media (max-width: 768px) {
+  .skills-list li {
+    text-indent: -9999px; /* Убираем текст с экрана */
+    position: relative; /* Для возможности оставлять изображение на месте */
+  }
+
+  .skills-list li img {
+    text-indent: 0; /* Возвращаем значки в нормальное положение */
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%); /* Центрируем значок по горизонтали */
+  }
+}
+@media (max-width: 768px) {
+  .skills-list {
+    gap: 40px; /* Увеличиваем пространство между значками только на мобильной версии */
+  }
+}
+
+@media (max-width: 768px) {
+  .skills-section h2 {
+    margin-bottom: 30px; /* Увеличиваем отступ под заголовком "Skills" */
+    margin-top: 5px; /* Увеличиваем отступ над заголовком "Skills" */
+    font-size: 2rem;
+      }
+    }
+
+
+  .skills-list li {
+    margin-bottom: 20px; /* Увеличиваем отступы между значками по вертикали */
+  }
+
+
+@media (max-width: 768px) {
+  .skills-list img {
+    width: 50px; /* Увеличиваем размер значков */
+    height: auto; /* Сохраняем пропорции значков */
+  }
+}
+@media (max-width: 768px) {
+  .skills-section {
+    padding-bottom: 30px; /* Увеличиваем нижний отступ внутри секции */
+  }
+}
+
+@media (max-width: 768px) {
+  .home-section p {
+    margin: 10px 0; /* Сбрасываем большие отступы и добавляем только сверху и снизу */
+    text-align: center; /* Центрируем текст */
+    position: static; /* Отменяем любые абсолютные или фиксированные позиции */
+    font-size: 1.2rem; /* Увеличиваем размер шрифта, чтобы текст был хорошо виден на мобильных устройствах */
+  }
+
+  .home-section {
+    padding-bottom: 40px; /* Добавляем дополнительное пространство внизу, чтобы текст не сливался с границей */
+  }
+}
+
+@media (max-width: 768px) {
+  .home-section {
+    padding-bottom: 10px; /* Уменьшаем отступ снизу */
+  }
+
+  .home-section p {
+    margin-bottom: 10px; /* Уменьшаем нижний отступ у текста */
+  }
+  
+
+  
