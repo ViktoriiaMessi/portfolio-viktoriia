@@ -10,7 +10,8 @@
 
 - Set up the project environment by installing required dependencies:
 
-- npm install
+```bash
+npm install
 
 ## Home
 
@@ -18,13 +19,13 @@
 
 HTML
 
-- Add a _nav_ tag with the class navbar.
+- Add a `nav` tag with the class navbar.
 
-- Include a _div_ with class container-flex for layout.
+- Include a `div` with class container-flex for layout.
 
-- Add an _h1_ with class logo for branding.
+- Add an `h1` with class logo for branding.
 
-- Use _ul_ and _li_ tags to create navigation links.
+- Use `ul` and `li` tags to create navigation links.
 
 CSS
 
@@ -38,13 +39,13 @@ CSS
 
 HTML
 
-- Add a _section_ tag with class about.
+- Add a `section` tag with class about.
 
-- Include a _div_ with class container grid.
+- Include a `div` with class container grid.
 
-- Add an _h2_ with class section-title for the title.
+- Add an `h2` with class section-title for the title.
 
-- Include a _p_ tag for a short bio and a list of skills.
+- Include a `p` tag for a short bio and a list of skills.
 
 CSS
 
@@ -58,35 +59,32 @@ CSS
 
 HTML
 
-- Add a _section_ tag with class projects.
+- Add a `section` tag with class projects.
 
-- Include a _div_ with class container grid.
+- Include a `div` with class container grid.
 
 - Create individual project cards with:
-
-_img_ for project screenshots
-
-_h3_ for project titles
-
-<p> for project descriptions
+`img` for project screenshots
+`h3` for project titles
+`p` for project descriptions
 
 CSS
 
-Use a grid layout for project cards.
+- Use a grid layout for project cards.
 
-Style cards with hover effects.
+- Style cards with hover effects.
 
-Add responsive design for smaller screens.
+- Add responsive design for smaller screens.
 
 ## Skills
 
 HTML
 
-- Add a _section_ tag with class skills.
+- Add a `section` tag with class skills.
 
-- Include a _div_ with class container grid.
+- Include a `div` with class container grid.
 
-- Add _div_ tags for individual skills with icons and labels.
+- Add `div` tags for individual skills with icons and labels.
 
 CSS
 
@@ -100,9 +98,9 @@ CSS
 
 HTML
 
-- Add a _section_ tag with class contact.
+- Add a `section` tag with class contact.
 
-- Include a _form_ element with*div* tags with class form-control.
+- Include a `form` element with `div` tags with class form-control.
 
 - Input fields for name, email, and message.
 
@@ -111,9 +109,7 @@ HTML
 CSS
 
 - Style the contact form with:
-
 margin for spacing
-
 padding for form fields
 
 - Responsive layout for mobile devices.
@@ -122,16 +118,13 @@ padding for form fields
 
 HTML
 
-- Add a _footer_ tag with class footer bg-dark py-5.
+- Add a `footer` tag with class footer bg-dark py-5.
 
-- Include a _div_ with class container grid grid-3.
+- Include a `div` with class container grid grid-3.
 
 - Add three sections:
-
-Branding: _h1_ for the portfolio name and copyright note
-
-Navigation: _ul_ with links to Home, About, Projects, and Contact
-
+Branding: `h1` for the portfolio name and copyright note
+Navigation: `ul` with links to Home, About, Projects, and Contact
 Social Media: Links with FontAwesome icons for GitHub, LinkedIn, and Twitter
 
 CSS
@@ -141,3 +134,4 @@ CSS
 - Use grid layout to align the three sections horizontally.
 
 - Add hover effects for social media icons.
+```
