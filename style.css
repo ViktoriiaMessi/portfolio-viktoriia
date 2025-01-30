@@ -425,13 +425,16 @@ body {
   overflow-x: hidden;
 }
 
-@media (max-width: 768px) 
-.body {
+@media (max-width: 768px) .body {
   background-image: url("fone.jpg");
-  background-color: rgba(0, 0, 0, 0.8); /* Добавляет слой цвета поверх изображения, делая его менее контрастным */
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.8
+  ); /* Добавляет слой цвета поверх изображения, делая его менее контрастным */
   background-blend-mode: overlay; /* Смешивает цвет и изображение */
 }
-
 
 /* Адаптация элементов для мобильной версии */
 @media (max-width: 768px) {
@@ -441,37 +444,38 @@ body {
     background-color: #1a1a1a; /* Менее контрастный цвет, более мягкий для глаз */
   }
 
- /* Общие правила для предотвращения горизонтальной прокрутки */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-html, body {
-  width: 100%;
-  overflow-x: hidden;
-}
-
-/* Основные стили для заголовка "PORTFOLIO" */
-.home-section h1 {
-  font-size: 60px; /* Размер шрифта для десктопов */
-  padding-top: 105px; /* Смещает заголовок вниз */
-  display: block; /* Убедитесь, что заголовок занимает всю ширину для центрирования */
-  text-align: center; /* Центрируем текст */
-  margin-left: -100px; /* Сдвигаем заголовок немного влево */
-  
-  color: #ffffff; /* Цвет заголовка */
-}
-
-/* Адаптивные стили для мобильных устройств */
-@media (max-width: 768px) {
-  body {
-    background-image: url("fone.jpg");
-    background-color: rgba(0, 0, 0, 0.8);
-    background-blend-mode: overlay;
+  /* Общие правила для предотвращения горизонтальной прокрутки */
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
   }
-}
+
+  html,
+  body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  /* Основные стили для заголовка "PORTFOLIO" */
+  .home-section h1 {
+    font-size: 60px; /* Размер шрифта для десктопов */
+    padding-top: 105px; /* Смещает заголовок вниз */
+    display: block; /* Убедитесь, что заголовок занимает всю ширину для центрирования */
+    text-align: center; /* Центрируем текст */
+    margin-left: -100px; /* Сдвигаем заголовок немного влево */
+
+    color: #ffffff; /* Цвет заголовка */
+  }
+
+  /* Адаптивные стили для мобильных устройств */
+  @media (max-width: 768px) {
+    body {
+      background-image: url("fone.jpg");
+      background-color: rgba(0, 0, 0, 0.8);
+      background-blend-mode: overlay;
+    }
+  }
 
   .home-section h1 {
     font-size: 28px; /* Уменьшаем размер для мобильных устройств */
@@ -530,58 +534,54 @@ html, body {
   }
 }
 
+/* Логотип и меню */
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 0;
+}
 
+.nav-menu,
+.menu {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 10px 0;
+}
 
-  /* Логотип и меню */
-  .header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 10px 0;
-  }
+.nav-menu {
+  display: none; /* Скрыть меню, если нет hamburger-меню */
+}
 
-  .nav-menu,
-  .menu {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    margin: 10px 0;
-  }
+/* Изображения и разделы */
+img {
+  max-width: 100%;
+  height: auto;
+}
 
-  .nav-menu {
-    display: none; /* Скрыть меню, если нет hamburger-меню */
-  }
+/* Блок About Me и другие секции */
+section {
+  padding: 15px;
+  text-align: center;
+}
 
-  /* Изображения и разделы */
-  img {
-    max-width: 100%;
-    height: auto;
-  }
+/* Кнопки */
+.contact-form button {
+  width: 100%;
+  margin: 40px 0;
+}
 
-  /* Блок About Me и другие секции */
-  section {
-    padding: 15px;
-    text-align: center;
-  }
+/* Логотип в шапке */
+.header img {
+  max-width: 100px;
+  height: auto;
+}
 
-  /* Кнопки */
-  .contact-form button {
-    width: 100%;
-    margin: 40px 0;
-
-  
-  }
-
-  /* Логотип в шапке */
-  .header img {
-    max-width: 100px;
-    height: auto;
-  }
-
-  /* Полоски для gold-stripes */
-  .gold-stripes {
-    margin: 10px 0;
-  }
+/* Полоски для gold-stripes */
+.gold-stripes {
+  margin: 10px 0;
+}
 
 /* Адаптивные стили для кнопки в мобильной версии */
 /* Исправление кнопки для мобильной версии */
@@ -628,14 +628,12 @@ html, body {
     margin-bottom: 30px; /* Увеличиваем отступ под заголовком "Skills" */
     margin-top: 5px; /* Увеличиваем отступ над заголовком "Skills" */
     font-size: 2rem;
-      }
-    }
-
-
-  .skills-list li {
-    margin-bottom: 20px; /* Увеличиваем отступы между значками по вертикали */
   }
+}
 
+.skills-list li {
+  margin-bottom: 20px; /* Увеличиваем отступы между значками по вертикали */
+}
 
 @media (max-width: 768px) {
   .skills-list img {
@@ -666,10 +664,8 @@ html, body {
   .home-section {
     padding-bottom: 10px; /* Уменьшаем отступ снизу */
   }
+}
 
-  .home-section p {
-    margin-bottom: 10px; /* Уменьшаем нижний отступ у текста */
-  }
-  
-
-  
+.home-section p {
+  margin-bottom: 10px; /* Уменьшаем нижний отступ у текста */
+}
