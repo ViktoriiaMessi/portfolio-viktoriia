@@ -1,21 +1,18 @@
-/* ЛОГОТИП */
+
 .logo {
-  height: 60px;
-  margin-right: 15px;
-  margin-left: -30px;
-  border: 0.3px solid #fdd835;
-  border-radius: 5px;
-  padding: 5px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  height: 60px; /* Устанавливаем меньшую высоту для логотипа, чтобы он не выглядел слишком большим */
+  margin-right: 15px; /* Пространство справа, чтобы логотип не прилегал к другим элементам */
+  margin-left: -30px; /* Смещаем логотип левее на 30 пикселей */
+  border: 0.3px solid #fdd835; /* Желтая рамка вокруг логотипа */
+  border-radius: 5px; /* Закругленные углы рамки */
+  padding: 5px; /* Внутренние отступы для логотипа, чтобы он не прилипал к границе рамки */
+  text-shadow: 1px 1px 5px rgb(0 0 0 / 0.5);
 }
 
 /* НАВИГАЦИОННОЕ МЕНЮ */
 header {
-  background-color: rgba(
-    0,
-    0,
-    0,
-    80%
+  background-color: rgb(
+    0 0 0 / 0.8
   ); /* Меняем фон шапки на более легкий темный цвет с прозрачностью */
   padding: 20px 30px; /* Увеличиваем отступы, чтобы создать больше пространства в шапке */
 }
@@ -25,7 +22,7 @@ header {
   font-size: 1.2rem; /* Размер шрифта */
   margin-left: 250px; /* Отступ слева от логотипа */
   opacity: 2; /* Полупрозрачность для текста */
-  text-shadow: 1px 1px 5px rgba(0, 0, 0, 50%); /* Легкая тень для текста */
+  text-shadow: 1px 1px 5px rgb(0 0 0 / 0.5); /* Легкая тень для текста */
   align-self: center; /* Выравниваем текст по вертикали */
 }
 
@@ -55,11 +52,11 @@ nav a:hover {
 }
 
 body {
-  background-image: url("fone.jpg"); /* Укажите путь к вашему изображению */
+  background-image: url("background.jpg"); /* Укажите путь к вашему изображению */
   background-size: cover; /* Заставляет изображение покрывать весь фон */
   background-repeat: no-repeat; /* Убирает повторение изображения */
   background-attachment: fixed; /* Фиксирует изображение на месте при прокрутке */
-  background-image: url("fone.jpg");
+  background-image: url("background.jpg");
   background-color: rgba(0, 0, 0, 30%);
   background-blend-mode: overlay;
 }
@@ -89,7 +86,7 @@ body {
   height: 50vh; /* Высота секции будет занимать половину высоты экрана */
   display: flex; /* Flexbox для выравнивания текста по центру */
   flex-direction: column; /* Элементы расположены сверху вниз */
-  align-items: center; /* Центрируем элементы по горизонтали */
+  align-items: flex-end; /* Центрируем элементы по горизонтали */
   justify-content: center; /* Центрируем элементы по вертикали */
   color: white; /* Делаем текст белым для контраста с фоном */
   text-align: center; /* Центрируем текст */
@@ -119,7 +116,7 @@ body {
   max-width: 1000px; /* Ограничиваем ширину секции */
   border-radius: 8px; /* Слегка закругляем углы секций для аккуратного вида */
   background-color: #222; /* Темный фон для секции */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 40%); /* Легкая тень для создания эффекта объема */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Легкая тень для создания эффекта объема */
 }
 
 /* ЗАГОЛОВКИ СЕКЦИЙ */
@@ -425,15 +422,14 @@ body {
   overflow-x: hidden;
 }
 
-@media (max-width: 768px) .body {
-  background-image: url("fone.jpg");
-  background-color: rgba(
-    0,
-    0,
-    0,
-    0.8
-  ); /* Добавляет слой цвета поверх изображения, делая его менее контрастным */
-  background-blend-mode: overlay; /* Смешивает цвет и изображение */
+@media (max-width: 768px) {
+  body {
+    background-image: url("fone.jpg");
+    background-color: rgba(
+      0 0 0 / 0.8
+    ); /* Добавляет слой цвета поверх изображения, делая его менее контрастным */
+    background-blend-mode: overlay;
+  } /* Смешивает цвет и изображение */
 }
 
 /* Адаптация элементов для мобильной версии */
@@ -472,7 +468,7 @@ body {
   @media (max-width: 768px) {
     body {
       background-image: url("fone.jpg");
-      background-color: rgba(0, 0, 0, 0.8);
+      background-color: rgba(0 0 0 / 0.8);
       background-blend-mode: overlay;
     }
   }
@@ -617,13 +613,12 @@ section {
     transform: translateX(-50%); /* Центрируем значок по горизонтали */
   }
 }
+
 @media (max-width: 768px) {
   .skills-list {
     gap: 40px; /* Увеличиваем пространство между значками только на мобильной версии */
   }
-}
 
-@media (max-width: 768px) {
   .skills-section h2 {
     margin-bottom: 30px; /* Увеличиваем отступ под заголовком "Skills" */
     margin-top: 5px; /* Увеличиваем отступ над заголовком "Skills" */
