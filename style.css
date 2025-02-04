@@ -75,6 +75,12 @@ body {
   transform: translateY(-50%); /* Центрируем по вертикали */
 }
 
+@media (max-width: 768px) {
+  .profile-image {
+    display: none !important; /* Скрыть элемент с текстом в мобильной версии */
+  }
+}
+
 .profile-image img {
   width: 100%; /* Заполняет родительский контейнер */
   height: auto;
