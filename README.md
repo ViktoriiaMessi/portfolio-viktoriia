@@ -1,10 +1,12 @@
-# Name of project
+# Viktoriia Sukhetska - PORTFOLIO
 
-> A longer description
+> Portfolio for Junior Full Stack Developer that reflects the values ​​and
+practical skills of this specialist. You can study all the necessary
+information, send a request for cooperation.
 
 ## Table of contents
 
-- [Name of project](#name-of-project)
+- [PORTFOLIO](#name-of-project)
   - [Table of contents](#table-of-contents)
   - [General info](#general-info)
   - [Screenshots](#screenshots)
@@ -22,43 +24,51 @@
 
 ## General info
 
-> A short description
+> Portfolio for Junior Full Stack Developer
 
 ## Screenshots
 
-![Example screenshot](./planning/screenshot.jpg)
+![Example screenshot](./planning/screen.jpg)
 
 ## Technologies
 
-- Node 14.16.0
+- CSS3
+- HTML5
 - VSC code
-- JavaScript
-- ...
-- ...
 
 ## Setup
 
-- `npm run start`
+- `git clone + link`
+- `npm install`
 
 ## Code Examples
 
-```js
-// the hello world program
-console.log("Hello World");
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- это шапка, стандартные универсальные настройки, отображение фавикона и вкладки -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- адаптация для устройств -->
+    <title>Viktoriia Sukhetska Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <!--подкючение CSS-->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="favicon.png" type="image/png" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+      
 ```
 
 ## Features
 
-List of features ready and Todos for future development
-
--
--
--
-
 To-do list:
 
--
--
+- Check the correctness of the written code
+(because it is written by a beginner specialist)
+- Create a project for the portfolio and add it to the portfolio
 
 ## Status
 
@@ -66,11 +76,11 @@ Project is: _in progress_
 
 ## Inspiration
 
-Project by freeCodeCamp.org
+Project by Viktoriia S.
 
 ## Contact
 
-By [Name]
+🔗 [GitHub Profile](https://github.com/ViktoriiaMessi)
 
 ## Instructions for use
 
